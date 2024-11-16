@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enppi Academy</title>
+    <style>
+        /* Reset بعض الأنماط الافتراضية للمتصفح */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* تنسيق الرأس */
+        header {
+            background-color: #004080;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header .logo {
+            float: left;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header nav {
+            float: right;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* تنسيق الهيرو */
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        /* تنسيق الأقسام */
+        section {
+            padding: 60px 0;
+        }
+
+        .about, .courses, .instructors, .contact {
+            background-color: #f9f9f9;
+        }
+
+        .about h2, .courses h2, .instructors h2, .contact h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 32px;
+            color: #004080;
+        }
+
+        .about p, .courses p, .instructors p, .contact p {
+            text-align: center;
+            max-width: 800px;
+            margin: 10px auto;
+            font-size: 18px;
+        }
+
+        /* تنسيق الدورات */
+        .courses .course-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .courses .course {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 300px;
+            margin: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .courses .course:hover {
+            transform: scale(1.05);
+        }
+
+        .courses .course h3 {
+            margin-bottom: 15px;
+            color: #004080;
+        }
+
+        /* تنسيق المدربين */
+        .instructors .instructor-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .instructors .instructor {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 250px;
+            margin: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .instructors .instructor:hover {
+            transform: scale(1.05);
+        }
+
+        .instructors .instructor img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .instructors .instructor h3 {
+            margin-bottom: 10px;
+            color: #004080;
+        }
+
+        /* تنسيق الاتصال */
+        .contact form {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .contact form input, .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact form button {
+            padding: 10px 20px;
+            background-color: #004080;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .contact form button:hover {
+            background-color: #003060;
+        }
+
+        /* تنسيق الفوتر */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* استجابة الهاتف المحمول */
+        @media (max-width: 768px) {
+            header .logo, header nav {
+                float: none;
+                text-align: center;
+            }
+
+            header nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .courses .course, .instructors .instructor {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الرأس -->
+    <header>
+        <div class="container">
+            <div class="logo">Enppi Academy</div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#courses">Courses</a>
+                <a href="#instructors">Instructors</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- هيرو -->
+    <div class="hero">
+        <h1>Welcome to Enppi Academy</h1>
+    </div>
+
+    <!-- قسم حول الأكاديمية -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Enppi Academy is dedicated to providing high-quality training and education in engineering and technical fields. Our mission is to empower professionals with the knowledge and skills needed to excel in their careers.</p>
+        </div>
+    </section>
+
+    <!-- قسم الدورات -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <h2>Our Courses</h2>
+            <div class="course-list">
+                <div class="course">
+                    <h3>Engineering Management</h3>
+                    <p>Learn the fundamentals of managing engineering projects and teams effectively.</p>
+                </div>
+                <div class="course">
+                    <h3>Advanced CAD</h3>
+                    <p>Master advanced Computer-Aided Design techniques for complex projects.</p>
+                </div>
+                <div class="course">
+                    <h3>Project Planning</h3>
+                    <p>Develop comprehensive project plans to ensure successful project execution.</p>
+                </div>
+                <!-- يمكنك إضافة المزيد من الدورات هنا -->
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المدربين -->
+    <section class="instructors" id="instructors">
+        <div class="container">
+            <h2>Our Instructors</h2>
+            <div class="instructor-list">
+                <div class="instructor">
+                    <img src="instructor1.jpg" alt="Instructor 1">
+                    <h3>Dr. Ahmed Ali</h3>
+                    <p>Expert in Engineering Management with over 20 years of experience.</p>
+                </div>
+                <div class="instructor">
+                    <img src="instructor2.jpg" alt="Instructor 2">
+                    <h3>Eng. Sara Hassan</h3>
+                    <p>Specialist in CAD and design technologies.</p>
+                </div>
+                <div class="instructor">
+                    <img src="instructor3.jpg" alt="Instructor 3">
+                    <h3>Prof. Mahmoud Fahmy</h3>
+                    <p>Project Planning guru with numerous successful projects.</p>
+                </div>
+                <!-- يمكنك إضافة المزيد من المدربين هنا -->
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الاتصال -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to enroll in our courses, please get in touch!</p>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <p>&copy; 2024 Enppi Academy. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
